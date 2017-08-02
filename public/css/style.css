@@ -1,0 +1,915 @@
+@font-face {
+	font-family: 'Samsung Sharp Sans';
+	src: url('../fonts/SamsungSharpSans-Bold.eot');
+	src: url('../fonts/SamsungSharpSans-Boldd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SamsungSharpSans-Bold.woff') format('woff'),
+		url('../fonts/SamsungSharpSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Samsung Sharp Sans';
+	src: url('../fonts/SamsungSharpSans.eot');
+	src: url('../fonts/SamsungSharpSansd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SamsungSharpSans.woff') format('woff'),
+		url('../fonts/SamsungSharpSans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Samsung Sharp Sans';
+	src: url('../fonts/SamsungSharpSans-Medium.eot');
+	src: url('../fonts/SamsungSharpSans-Mediumd41d.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SamsungSharpSans-Medium.woff') format('woff'),
+		url('../fonts/SamsungSharpSans-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: black;
+	overflow: hidden;
+}
+b, strong, i, em, mark, small, h1, h2, h3, h4, h5, h6, p, span{
+		font-family:'Samsung Sharp Sans';
+		color: #818181;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+h3{
+	font-weight: bold;
+	margin: 0;
+	padding-bottom: 15px;
+}
+.flex_div{
+	display: flex;
+	flex-wrap: wrap;
+}
+.main_paddings{
+	padding-left: 19.5%;
+   	padding-right: 19.5%;
+}
+.fancybox-overlay{
+	z-index: 999999999;
+}
+.fancybox-opened .fancybox-skin{
+	box-shadow: none;
+}
+.fancybox-skin{
+	background-color: transparent;
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,1);
+  z-index: 99999999999999;
+}
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+   top: 50%;
+  background-image: url("../images/preloader.gif");
+   background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+}
+.up{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 4vh;
+	background-color: #bc0e00;
+	right: 2%;
+	border-radius: 8px;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+}
+.up img{
+	width: 70%;
+	margin-top: 10px;
+	vertical-align: -webkit-baseline-middle;
+}
+.socialBar{
+	position: fixed;
+	right: 2%;
+	top: 10%;
+	width: 40px;
+	height: auto;
+	z-index: 9;
+}
+.socialBar div{
+	width: 100%;
+	height: 40px;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 10px;
+	margin-top: 5px;
+	text-align: center;
+}
+.socialBar div i{
+	margin-top: 6px;
+	color: black;
+}
+#home{
+	width: 100%;
+	height: 100vh;
+	background-image: url('../images/_MG_0987.png');
+	background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#header{
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999999999;
+}
+.header_main{
+	text-align: center;
+	width: 100%;
+	padding-top: 21px;
+	position: relative;
+	left: auto;
+	right: auto;
+	z-index: 999;
+}
+.burger{
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.1);
+	display: none;
+	text-align: center;
+}
+.burger img{
+	transition: .3s linear;
+	width: 60%;
+	vertical-align:-webkit-baseline-middle;
+	margin-top: 7px;
+}
+.header_main ul {
+	list-style-type: none;
+	padding: 0;
+	margin-left: -3%;
+}
+.header_main ul a{
+	text-decoration: none;
+}
+.header_main ul  li{
+	display: inline-block;
+	color: white;
+	margin-left: 3%;
+	font-family: 'Samsung Sharp Sans';
+	font-size: 1.2vw;
+	font-weight: bold;
+	font-style: normal;
+	cursor: pointer;
+}
+.color{
+	color:rgba(125, 13, 6, 0.9) !important;
+}
+.header_main ul  li:hover{
+	color: rgba(125, 13, 6, 0.9);
+	-webkit-transition: .4s linear;
+	   -moz-transition: .4s linear;
+	    -ms-transition: .4s linear;
+	     -o-transition: .4s linear;
+	        transition: .4s linear;
+}
+.home_logo_main{
+	width: 100%;
+	top: 240px;
+    padding-left: 14.5%;
+    padding-right: 11%;
+    position: absolute;
+}
+.home_logo{
+	width: 100%;
+	height: 100%;
+}
+.home_logo img{
+	width: 100%;
+	height: 100%;
+
+}
+#about, #interview{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	height: auto;
+}
+.about_text_main, .show_man_text-main
+{
+	   width: 100%;
+    padding-top: 9%;
+    padding-bottom: 2%;
+    padding-left: 20.5%;
+    padding-right: 20.5%;
+    text-align: center;
+}
+h3{
+	font-family:'Samsung Sharp Sans';
+	font-weight: bold;
+	color: #818181;
+	margin: 0;
+	padding-bottom: 15px;
+}
+.about_text_main p ,.show_man_text-main p{
+	padding-top: 20px;
+	color: #818181;
+	font-family: 'Samsung Sharp Sans';
+	font-weight: 500;
+	font-size: 1.05vw;
+}
+.about_logo_main{
+	padding-top: 15px;
+}
+.about_logo{
+	width: 45%;
+	height: 100%;
+	margin: 0 auto;
+}
+.about_logo img{
+	width: 100%;
+	height: 100%;
+}
+#singer{
+	padding-top: 7%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 10%;
+
+}
+#singer h3{
+	padding-bottom: 25px;
+}
+.singer_text{
+	padding-top:8%;
+    padding-bottom:3%;
+    padding-left: 19.5%;
+    padding-right: 19.5%;
+    text-align: center;
+}
+.singer_text p{
+	color: #818181;
+	font-family: 'Samsung Sharp Sans';
+	font-weight: 500;
+	font-size: 1.05vw;
+}
+.songs{
+	text-align: center;
+}
+.padsongs{
+	padding-top: 1.5vw;
+}
+.songs_col{
+	cursor: pointer;
+	height:14vw;
+	position: relative;
+
+}
+.img_songs{
+	width: 100%;
+	height: 90%;
+	border-radius: 3px;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.songs_col .red_div{
+	width: 100%;
+	height: 90%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	text-align: center;
+	border-radius: 2px;
+
+}
+.songs_col p{
+	font-family:"Samsung Sharp Sans";
+	font-size: 0.8vw;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 1.5px;
+	height: 1.3vw;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	color: #818181;
+}
+.red_div img{
+	width: 85%;
+	height: 85%;
+	margin-top: 8%;
+	opacity: 0.9;
+}
+.red_block{
+	display: block !important;
+}
+.player{
+
+	width: 100%;
+	height: 6vw;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding-right: 10%;
+	padding-left: 10%;
+	position: fixed;
+	bottom: 0;
+	display:none;
+}
+.mejs__container{
+	background-image: none;
+	font-family: "Samsung Sharp Sans";
+	background: transparent;
+	width: 100% !important;
+	font-size: 0.8vw;
+	font-weight: normal;
+}
+.mejs__time{
+	font-size: 0.8vw;
+	font-weight: bold;
+	font-family: "Samsung Sharp Sans";
+}
+.mejs__time-rail{
+	width: 75% !important;
+}
+.mejs__time-current, .mejs__horizontal-volume-current{
+	background-color: rgba(255, 0, 0, 0.90);
+}
+#show_man, #composer{
+	width: 100%;
+	height: auto;
+	padding-bottom: 5vw;
+	text-align: center;
+}
+.show_man_text-main h3{
+	padding-top: 60px;
+}
+.show_man_text-main p {
+	font-size: 0.95vw;
+}
+.video_show h3{
+	padding-bottom:1.5vw;
+}
+.video_player{
+	height: 19vw;
+	padding-top: 2.2vw;
+}
+.video_link{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: darkgray;
+}
+.video_link >img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);	
+}
+.pagination > .active > a, .pagination > .active > span{
+	background: #bc0e00 !important;
+	border-color: transparent !important;
+	color: #ebb6b2!important;
+	font-family: 'Samsung Sharp Sans';
+	font-size:1.2vw !important;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    border-color: transparent !important;
+		font-family: 'Samsung Sharp Sans'
+}
+.pagination > li > a, .pagination > li > span{
+	color: #000 !important;
+	font-family: 'Samsung Sharp Sans'
+}
+.pagination > li > a, .pagination > li > span {
+	padding: 7px 15px !important ;
+	font-size:1.2vw !important;
+}
+#gallery{
+	width: 100%;
+	height: auto;
+	padding-bottom:50px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+#gallery h3{
+	padding-top: 60px;
+	padding-bottom: 3vw;
+}
+.gallery_main{
+	padding-top: 5%;
+	width: 100%;
+	height: auto;
+}
+.gallery_images{
+	padding-top: 2.2vw;
+	vertical-align: top;
+	height: 25vw;
+}
+
+.gallery_images img{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+	cursor: pointer;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .4s linear;
+	   -moz-transition: .4s linear;
+	    -ms-transition: .4s linear;
+	     -o-transition: .4s linear;
+	        transition: .4s linear;
+}
+
+#interview{
+	width: 100%;
+	height: auto;
+	padding-bottom: 5vw;
+	padding-top: 10vw;
+}
+.interview_main{
+	width: 100%;
+	height: auto;
+}
+.interview_padding{
+	padding-top: 3vw;
+	padding-bottom: 3px;
+}
+/* .interview_head h3{
+	padding-top: 2vw;
+} */
+.text_first p {
+	text-indent: 2.5vw;
+	font-family:'Samsung Sharp Sans';
+	color: #969696;
+	font-size: 0.9vw;
+	font-weight: normal;
+	text-align-last: left;
+}
+.img_right{
+	width: 25%;
+	height: 19.5vw;
+	display: inline-block;
+	float: right;
+	text-align: right;
+}
+.img_right img{
+	width: 90%;
+	height: 100%;
+	object-fit: cover;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	border-radius: 2px;
+
+}
+#contact{
+	width: 100%;
+	height: auto;
+	background-image: url('../images/logo%20copy%202.png');
+	background-repeat: no-repeat;
+	    background-position: center 20px;
+	background-size: auto 100%;
+	padding-bottom: 2.5vw;
+}
+.shape{
+	width: 100%;
+	padding-top:7vw;
+	text-align: center;
+	padding-left: 10%;
+   	 padding-right: 10%;
+}
+.shape img{
+	height: 100%;
+	width: 100%;
+}
+footer h3 {
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+}
+footer h5{
+	font-family:'Samsung Sharp Sans';
+	font-weight: bold;
+	color: #818181;
+	margin: 0;
+}
+footer p a{
+	text-decoration: none;
+	font-family:'Samsung Sharp Sans';
+	color: #818181;
+	font-size: 0.8vw;
+	font-weight: bold;
+}
+footer p a:hover, footer p a:focus{
+	text-decoration: none;
+	color: #818181;
+}
+/* js animation elavesi */
+	.come-in {
+	transform: translateY(250px);
+	animation: come-in 0.8s ease forwards;
+	}
+.come-in:nth-child(odd) {
+animation-duration: 0.4s;
+}
+.already-visible {
+transform: translateY(0);
+animation: none;
+}
+@keyframes come-in {
+to { transform: translateY(0); }
+}
+@media only screen
+and (min-width : 0px)
+and (max-width : 480px) {
+	.up{
+		display: none !important;
+	}
+	.burger{
+		display: block;
+		position: fixed;
+		top: 3%;
+		left: 4%;
+		z-index: 10;
+	}
+	.socialBar{
+		width: 35px;
+		z-index: 999999999;
+		top: 4%;
+	}
+	.socialBar div{
+		width: 100%;
+		height: 35px;
+		margin-top: 5px;
+	}
+	.fa-2x{
+		font-size: 1.6em;
+	}
+	.header_main  {
+		padding-top: 0;
+		position: fixed;
+		min-height:20px;
+		z-index: 9999999;
+	}
+	.header_main ul{
+		display: none;
+		padding-top: 8%;
+		margin: 0;
+		padding-bottom: 8%;
+		z-index: 20;
+	}
+	.header_main ul li {
+		display: block;
+		font-size: 4vw;
+		padding-top: 3%;
+		margin: 0;
+	}
+	#home{
+		height: 65vh;
+    background-size: 196% 85%;
+    background-position: 35% -20%;
+	}
+	#header{
+		background-color: transparent;
+		height: 28px;
+	}
+	.home_logo_main{
+	padding-left: 11%;
+    padding-right: 11%;
+    top: 170px;
+	}
+	.home_logo{
+		height: 57%;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.home_logo img{
+		height: auto;
+	}
+	.about_text_main, .show_man_text-main{
+		padding-right: 11%;
+		padding-left: 11%;
+	}
+	.about_text_main p, .show_man_text-main p, .singer_text p {
+		font-size: 3.45vw;
+	}
+	.about_logo{
+		width: 70%;
+	}
+	.player{
+		height: auto;
+		width: 100%;
+		padding-left: 3%;
+		padding-right: 3%
+	}
+	.mejs__time {
+    	font-size: 2.8vw;
+	}
+	.mejs__time-rail{
+		width: 37% !important;
+	}
+	.mejs__horizontal-volume-slider, .mejs__horizontal-volume-total{
+		width: 36px !important;
+	}
+
+	.video_player{
+		height: 60vw;
+	}
+	.main_paddings{
+		padding-left: 11%;
+		padding-right: 11%;
+	}
+	#gallery h3{
+		padding-bottom: 7vw;
+	}
+	.gallery_images, .songs_col{
+		height: 88vw;
+	}
+	.img_right{
+		width: 100%;
+		height: 42vw;
+	}
+	.img_right img{
+		object-fit: inherit;
+		height: 90%;
+		width: 100%;
+	}
+	.text_first p {
+		font-size: 2.1vw;
+	}
+	.shape{
+		height: 1px;
+		padding-top: 0
+	}
+	.shape img{
+		height: 100%;
+		vertical-align: top;
+	}
+	footer{
+		text-align: center;
+	}
+	footer h3{
+		font-size: 4vw;
+	}
+	footer h5{
+		font-size: 3.5vw
+	}
+	footer p a{
+		font-weight: bold;
+		font-size: 2.5vw;
+	}
+	#contact{
+	padding-top: 15%;
+	    background-position: center 65px;
+    background-size: auto 55%;
+	}
+}
+
+@media only screen
+and (min-width :480.1px)
+and (max-width :768px) {
+	.up{
+		display: none !important;
+	}
+	.burger{
+		display: block;
+		position: fixed;
+		top: 3%;
+		left: 4%;
+		z-index: 10;
+	}
+	.socialBar{
+		width: 35px;
+		z-index: 999999999;
+		top: 4%;
+	}
+	.socialBar div{
+		width: 100%;
+		height: 35px;
+		margin-top: 5px;
+	}
+	.fa-2x{
+		font-size: 1.6em;
+	}
+	.header_main  {
+		padding-top: 0;
+		position: fixed;
+		min-height:20px;
+		z-index: 9999999;
+	}
+	.header_main ul{
+		display: none;
+		padding-top: 8%;
+		margin: 0;
+		padding-bottom: 8%;
+		z-index: 20;
+	}
+	.header_main ul li {
+		display: block;
+		font-size: 4vw;
+		padding-top: 3%;
+		margin: 0;
+	}
+	#home{
+	    background-size: 169% 88%;
+    background-position: 29% -20%;
+	}
+	#header{
+		background-color: transparent;
+		height: 28px;
+	}
+	.home_logo_main{
+	padding-left: 11%;
+    padding-right: 11%;
+    top: 290px;
+	}
+	.home_logo{
+		height: 57%;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.home_logo img{
+		height: auto;
+	}
+	.shape{
+		height: 1px;
+		padding-top: 0
+	}
+	.shape img{
+		height: 100%;
+		vertical-align: top;
+	}
+	footer{
+		text-align: center;
+	}
+	footer h3{
+		font-size: 4vw;
+	}
+	footer h5{
+		font-size: 3.5vw
+	}
+	footer p a{
+		font-weight: bold;
+		font-size: 2.5vw;
+	}
+	#contact{
+	padding-top: 15%;
+	    background-position: center 127px;
+    background-size: auto 55%;
+	}
+	.about_text_main p, .show_man_text-main p, .singer_text p{
+
+		font-size: 2vw;
+	}
+	.about_text_main , .show_man_text-main{
+
+	padding-left: 14.5%;
+    padding-right: 14.5%;
+	}
+	.gallery_images, .songs_col{
+		height: 88vw;
+	}
+	.player{
+		height: auto;
+		width: 100%;
+		padding-left: 3%;
+		padding-right: 3%
+	}
+	.mejs__time {
+    	font-size: 2vw;
+	}
+	.mejs__time-rail{
+		width: 60% !important;
+	}
+	.mejs__horizontal-volume-slider, .mejs__horizontal-volume-total{
+		width: 40px !important;
+	}
+	.video_player{
+		height: 60vw;
+	}
+		.img_right{
+		width: 100%;
+		height: 42vw;
+	}
+	.img_right img{
+		object-fit: inherit;
+		height: 90%;
+		width: 100%;
+	}
+	.text_first p {
+    	font-size: 1.8vw;
+	}
+	.songs_col p{
+		font-size: 2.8vw;
+		height: 3.8vw;
+	}
+}
+@media only screen
+and (min-width : 768px)
+and (max-width : 991px) {
+	.socialBar {
+   		 top: 12%;
+	}
+	.container {
+    width: 845px !important;
+}
+
+
+	#home{
+		height: 70vh;
+		background-position: 24% 0px;
+    	background-size: 120% 100%;
+
+	}
+	.home_logo_main{
+		top: 190px;
+	}
+	.header_main ul  li{
+		font-size: 1.6vw;
+	}
+	.about_text_main, .show_man_text-main, .singer_text, .main_paddings{
+		padding-left: 14%;
+		padding-right: 14%;
+	}
+	.about_text_main p, .show_man_text-main p, .singer_text p{
+		line-height: 12.5px;
+		font-size: 1.4vw;
+	}
+
+	 .text_first p {
+		font-size: 1.15vw;
+	}
+	/* .player{
+		padding-top: 29px;
+	} */
+	.player{
+		height: auto;
+		width: 100%;
+		padding-left: 3%;
+		padding-right: 3%
+	}
+	.mejs__time {
+    	font-size: 1.4vw;
+	}
+	.mejs__time-rail{
+		width: 71% !important;
+	}
+	.mejs__horizontal-volume-slider, .mejs__horizontal-volume-total{
+		width: 50px !important;
+	}
+	.gallery_images ,.songs_col{
+		height: 88vw;
+	}
+	.up, .socialBar{
+		right: 0.5%;
+	}
+	.video_player{
+		height: 65vw;
+	}
+	.img_right{
+		width: 100%;
+		height: 42vw;
+	}
+	.img_right img{
+		object-fit: inherit;
+		height: 90%;
+		width: 100%;
+	}
+	.text_first p {
+   		 font-size: 1.5vw;
+	}
+	.songs_col p{
+		font-size: 2.8vw;
+		height: 3.8vw;
+	}
+#contact{
+	background-size: auto 75%;
+	background-position-y: 84px;
+}
+footer h5{
+	font-size: 2vw;
+}
+footer p{
+	line-height: 13px;
+}
+footer p a{
+	font-size: 1.4vw;
+}
+}
