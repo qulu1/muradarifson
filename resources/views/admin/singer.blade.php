@@ -1,19 +1,23 @@
 @extends('layouts.layouts')
 
 @section('content')
-	<tr>
-		<th>Youtube Link</th>
-		<th>Photo</th>
-		<th class="text-center">Action</th>
-	</tr>
+	<div class="row">
 	@foreach($singer as $key)
-	<tr>
-		<td>{!! $key->text !!}</td>
-		<td><img style="width: 100px;height: 100px;" src="/images/{{ $key->photo }}"></td> 
-		<td><a href= {{ url("/admin/singer/" . $key->id . "/edit") }} class="btn btn-success">Update</a></td>
-		<td><a href= {{ url("/admin/singer/" . $key->id . "/delete") }} class="btn btn-danger">Delete</a></td>
-	</tr>
+
+	<div class="col-md-3">
+	<div class="gallery_main">
+		<img src="/images/{{ $key->photo }}">
+		<div class="hover_img">
+			<div class="hover_inner">
+				<a href= {{ url("/admin/singer/" . $key->id . "/edit") }} class="btn btn-success">Update</a>
+				<a href= {{ url("/admin/singer/" . $key->id . "/delete") }} class="btn btn-danger">Delete</a>
+				<a href= {!! $key->text !!} class="btn btn-danger" target="_blank">View Link</a>
+			</div>
+		</div>
+	</div>
+</div>
 	@endforeach
+	</div>
 @endsection
 
 @section('form')

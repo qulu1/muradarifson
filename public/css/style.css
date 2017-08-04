@@ -221,6 +221,7 @@ h3{
     text-align: center;
 }
 h3{
+	text-align: center;
 	font-family:'Samsung Sharp Sans';
 	font-weight: bold;
 	color: #818181;
@@ -453,9 +454,9 @@ h3{
 	padding-top: 3vw;
 	padding-bottom: 3px;
 }
-/* .interview_head h3{
-	padding-top: 2vw;
-} */
+ .interview_head h3{
+	padding-bottom: 35px;
+} 
 .text_first p {
 	text-indent: 2.5vw;
 	font-family:'Samsung Sharp Sans';
@@ -463,16 +464,13 @@ h3{
 	font-size: 0.9vw;
 	font-weight: normal;
 	text-align-last: left;
+	word-wrap: break-word;
 }
 .img_right{
-	width: 25%;
-	height: 19.5vw;
-	display: inline-block;
-	float: right;
-	text-align: right;
+	height: auto;
 }
 .img_right img{
-	width: 90%;
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	-webkit-filter: grayscale(100%);
@@ -644,7 +642,7 @@ and (max-width : 480px) {
 	}
 	.img_right{
 		width: 100%;
-		height: 42vw;
+		height: auto;
 	}
 	.img_right img{
 		object-fit: inherit;
@@ -727,6 +725,10 @@ and (max-width :768px) {
 		padding-top: 3%;
 		margin: 0;
 	}
+	.main_paddings{
+	padding-left: 10% !important;
+	padding-right: 10% !important;
+	}
 	#home{
 	    background-size: 169% 88%;
     background-position: 29% -20%;
@@ -806,7 +808,8 @@ and (max-width :768px) {
 	}
 		.img_right{
 		width: 100%;
-		height: 42vw;
+		height: auto;
+		padding-bottom: 35px;
 	}
 	.img_right img{
 		object-fit: inherit;
@@ -831,6 +834,10 @@ and (max-width : 991px) {
     width: 845px !important;
 }
 
+	.main_paddings{
+	padding-left: 8% !important;
+	padding-right: 8% !important;
+	}
 
 	#home{
 		height: 70vh;
@@ -885,7 +892,7 @@ and (max-width : 991px) {
 	}
 	.img_right{
 		width: 100%;
-		height: 42vw;
+		height: auto;
 	}
 	.img_right img{
 		object-fit: inherit;

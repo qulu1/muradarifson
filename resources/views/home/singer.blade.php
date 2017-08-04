@@ -54,7 +54,7 @@
 			<div class="show_man_text-main">
 
 			</div>
-			<h3 class="module">SONGS</h3>
+			<h3 class="module">SINGER</h3>
 			<div class="container">
 				<div class="row">
 				@foreach($singer as $key)

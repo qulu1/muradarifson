@@ -25,13 +25,20 @@ class GalleryController extends Controller
             'photo' => 'required',
         ]); 
     	$gallery = New Gallery;
+
         if ($request->hasFile('photo')) {
 
-            $name = time().".".$request->file("photo")->extension();
-            $request->file("photo")->move(public_path().'/images',$name);  
+            foreach ($request->photo as $file) {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path().'/images',$name); 
+                $galleryModel = new Gallery;
+                $galleryModel->photo = $name;
+                $galleryModel->save();
+            }
+            
+             
         };
-        $gallery->photo = $name;
-        $gallery->save();
+
     	return back();
     }
 

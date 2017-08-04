@@ -1,18 +1,24 @@
 @extends('layouts.layouts')
 
 @section('content')
-	<tr>
-		<th>Text</th> 
-		<th>Photo</th> 
-		<th class="text-center">Action</th> 
-	</tr>
 	@foreach($interview as $key)
-	<tr>
-		<td>{!! $key->text !!}</td>
-		<td><img style="width: 100px;height: 100px;" src="/images/{{ $key->photo }}"></td> 
-		<td><a href= {{ url( 'admin/interview/' . $key->id . '/edit' ) }} class="btn btn-success"> Edit </a></td>
-		<td><a href= {{ url( 'admin/interview/' . $key->id . '/delete' ) }} class="btn btn-danger">Delete</a></td>
-	</tr>
+	<div class="row">
+	<div class="col-md-8">
+		{!! $key->text !!}
+	</div>
+	<div class="col-md-4">
+		<div class="gallery_main">
+			<img src="/images/{{ $key->photo }}">
+			<div class="hover_img">
+				<div class="hover_inner">
+					<a href= {{ url( 'admin/interview/' . $key->id . '/edit' ) }} class="btn btn-success"> Edit </a>
+					<a href= {{ url( 'admin/interview/' . $key->id . '/delete' ) }} class="btn btn-danger">Delete</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
 	@endforeach
 @endsection
 

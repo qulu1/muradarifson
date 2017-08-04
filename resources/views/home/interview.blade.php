@@ -56,15 +56,24 @@
 		@foreach($interview as $key)
 			<div class="interview_main">
 				<div class="interview_head">
-					<h3 class="module"></h3>
+					<h3 class="module">INTERVIEWS</h3>
 				</div>
-				<div class="text_first main_paddings">
-					<div class="img_right module">
-						<img src= {{ url("/images/".$key->photo) }} alt="">
-					</div>
-					<p class="module">{!! $key->text !!}</p>
-				</div>
+					<div class="main_paddings">
+						<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="img_right module">
+								<img src= {{ url("/images/".$key->photo) }} alt="">
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-6 col-xs-12">
+							<div class="text_first">
+								{!! $key->text !!}
+							</div>
+						</div>
 				<div class="clearfix"></div>
+						</div>
+					</div>
+				
 			</div>
 		@endforeach	
 		</section>
